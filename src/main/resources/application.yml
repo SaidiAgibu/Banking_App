@@ -1,0 +1,32 @@
+server:
+  port: 9000
+
+spring:
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: your-email@outlook.com
+    password: your-password
+    default-encoding: UTF-8
+    properties:
+      mail:
+        mime:
+          charset: UTF
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/banking_app
+    username: root
+    password: codevirtus7580
+
+  application:
+    name: Banking_App
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+#email host
+VERIFY_EMAIL_HOST : http://localhost:9000
